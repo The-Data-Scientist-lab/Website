@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Kids Academy</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Comic Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #fce38a, #f38181);
+            color: #444;
+        }
+
+        header {
+            background: linear-gradient(to right, #43cea2, #185a9d);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 100%;
+            margin: 30px auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            font-size: 3rem;
+            color: #f38181;
+            border-left: 10px solid #ff9a9e;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 2px solid #f38181;
+        }
+
+        .card-content {
+            flex-grow: 1;
+        }
+
+        .card-content h3 {
+            margin: 0;
+            font-size: 2rem;
+            color: #444;
+        }
+
+        .card-content p {
+            margin: 10px 0;
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 1.4rem;
+            margin: 8px 0;
+            color: #444;
+        }
+
+        ul li::before {
+            content: '\1F4BB';
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        footer {
+            background: linear-gradient(to right, #43cea2, #185a9d);
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            border-radius: 15px 15px 0 0;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .animated-icons {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 20px 0;
+        }
+
+        .animated-icons img {
+            width: 100px;
+            height: 100px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .card {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Tech Kids Academy!</h1>
+    <p>Fun and Exciting Computer Classes for Kids</p>
+</header>
+
+<div class="container">
+    <div class="section">
+        <h2>Why Join Us?</h2>
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/4286/4286692.png" alt="Interactive Learning Icon">
+            <div class="card-content">
+                <h3>Interactive Learning</h3>
+                <p>Engaging lessons with games and hands-on activities.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1256/1256651.png" alt="Expert Trainers Icon">
+            <div class="card-content">
+                <h3>Friendly Trainers</h3>
+                <p>Qualified instructors who make learning easy and fun.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1048/1048965.png" alt="Creative Skills Icon">
+            <div class="card-content">
+                <h3>Creative Skills</h3>
+                <p>Boost creativity with exciting computer projects.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>What We Teach</h2>
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2572/2572307.png" alt="Excel Icon">
+            <div class="card-content">
+                <h3>Microsoft Excel</h3>
+                <p>Learn how to organize and analyze data in fun ways.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1216/1216733.png" alt="HTML & CSS Icon">
+            <div class="card-content">
+                <h3>HTML & CSS</h3>
+                <p>Build cool websites and explore the world of web design.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3418/3418854.png" alt="AI Basics Icon">
+            <div class="card-content">
+                <h3>Introduction to AI</h3>
+                <p>Discover artificial intelligence through fun activities.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5451/5451070.png" alt="Website Making Icon">
+            <div class="card-content">
+                <h3>Website Making</h3>
+                <p>Create amazing websites step-by-step.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Special Features</h2>
+        <div class="animated-icons">
+            <img src="https://cdn-icons-png.flaticon.com/512/1827/1827379.png" alt="Games Icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/3555/3555647.png" alt="Projects Icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/4343/4343486.png" alt="Certificates Icon">
+        </div>
+        <p style="text-align:center; font-size:1.2rem;">Enjoy exciting games, real-world projects, and earn certificates for every milestone!</p>
+    </div>
+
+    <div class="section">
+        <h2>Who Can Join?</h2>
+        <ul>
+            <li>Kids aged 3–6: Fun basics with games and visuals.</li>
+            <li>Kids aged 7–9: Beginner coding and safe browsing.</li>
+            <li>Kids aged 10–12: Advanced basics and creative projects.</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>📍 <strong>Location:</strong> Pali</p>
+    <p>📞 <strong>Contact Us:</strong> +91 9758781006</p>
+    <p>💌 <strong>Email:</strong> chauhantushar7770@gmail.com</p>
+    </a></p>
+</footer>
+
+</body>
+</html>
